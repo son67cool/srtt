@@ -147,3 +147,6 @@ int main() {
     </mxGraphModel>
   </diagram>
 </mxfile>
+
+
+<img width="1170" height="1662" alt="image-08-10-26-01-03" src="https://github.com/user-attachments/assets/dd0d4b18-549a-48d5-bab5-dc57e18e6ee9" />
