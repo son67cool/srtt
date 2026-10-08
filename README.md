@@ -27,6 +27,39 @@ int main() {
 
 }
 
+На функции
+
+    #include <stdio.h>
+    #include <locale.h>
+
+    void input(int *a, int *b, int *c)
+{
+    printf("Введите вес игрушек:\n");
+    scanf_s("%d %d %d", a, b, c);
+}
+
+    int c(int a, int b, int c)
+{
+    return (a % 7 == 0 || b % 7 == 0 || c % 7 == 0);
+}
+
+    int main()
+{
+    setlocale(LC_CTYPE, "RUS");
+
+    int a, b, c, kah;
+
+    printf("Контроль качества игрушек\n");
+
+    input(&a, &b, &c);
+
+    kah = check(a, b, c);
+
+    printf("Технологические нормы соблюдены (1 - да, 0 - нет): %d\n", kah);
+
+    return 0;
+}
+
 Блок схема
 [Диаграмма без названия.drawio](https://github.com/user-attachments/files/33198369/default.drawio)
 <mxfile host="app.diagrams.net">
