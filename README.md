@@ -128,7 +128,8 @@ int main() {
 
     int input()
 	
-{   int a,b,c; 
+{   
+    int a,b,c; 
 
     printf("Введите вес игрушек:\n");
 	
