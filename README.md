@@ -126,8 +126,9 @@ int main() {
     #include <stdio.h>
     #include <locale.h>
 
-    void input(int *a, int *b, int *c)
-{
+    int input()
+	
+{   int a,b,c; 
     printf("Введите вес игрушек:\n");
     scanf_s("%d %d %d", a, b, c);
 }
