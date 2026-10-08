@@ -53,7 +53,7 @@ int main() {
 
     input(&a, &b, &c);
 
-    kah = check(a, b, c);
+    kah = c(a, b, c);
 
     printf("Технологические нормы соблюдены (1 - да, 0 - нет): %d\n", kah);
 
