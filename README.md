@@ -132,26 +132,21 @@ int main() {
 
     printf("Введите вес игрушек:\n");
 	
-    scanf_s("%d %d %d", a, b, c);
+    scanf_s("%d %d %d", &a, &b, &c);
+	return (a % 7 == 0 || b % 7 == 0 || c % 7 == 0);
 }
 
-    int c(int a, int b, int c)
-{
-    return (a % 7 == 0 || b % 7 == 0 || c % 7 == 0);
-}
 
     int main()
 {
     setlocale(LC_CTYPE, "RUS");
 
-    int a, b, c, kah;
+    int kah;
 
     printf("Контроль качества игрушек\n");
 
-    input(&a, &b, &c);
-
-    kah = c(a, b, c);
-
+    kah = input();
+	
     printf("Технологические нормы соблюдены (1 - да, 0 - нет): %d\n", kah);
 
     return 0;
